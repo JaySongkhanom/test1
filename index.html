@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VAT Calculator</title>
+    <link rel="stylesheet" href="CSS.css">
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.full.min.js"></script>
+
+</head>
+<body>
+    <img src="D:\User\NATTHAWUT.C\Document\vsc\GW\Picture\SS.jpeg" width="20%" height="20%">
+    <h1>GW APPROVE</h1>
+
+    <button onclick="addRow()">+</button>
+
+    <table id="datatable1">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Item</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>EA</th>
+                <th>Total</th>
+                <th>Note</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="text" name="No." placeholder="Number"></td>
+                <td><input type="text" name="Item" placeholder="Item Type"></td>
+                <td><input type="text" name="description1" placeholder="Description"></td>
+                <td><input type="number" name="Price" placeholder="Price"></td>
+                <td><input type="number" name="EA" placeholder="QTY"></td>
+                <td><input type="number" name="Total" placeholder="Total"></td>
+                <td><input type="text" name="Note" placeholder="Note"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    
+    <button onclick="combineData()">Combine Data</button>
+    <button onclick="exportToExcel()">Export to Excel</button>
+
+
+    <table id="combinedTable" style="display: none;"></table>
+</body>
+</html>
